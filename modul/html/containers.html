@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Containers</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../../index.html">Home</a>
+    <h1>Containers</h1>
+    <ul>
+      <li>
+        <h2>Generic</h2>
+        <ul>
+          <li><h3>div</h3></li>
+          <p>Block-level element</p>
+          <p>
+            > Always starts on a new line and fill up the entire width of the
+            page
+          </p>
+          <p>e.g.</p>
+          <div>
+            <div class="highlight">Lorem</div>
+            ipsum dolor sit amet, consectetur adipisicing elit. Beatae, id!
+          </div>
+          <li><h3>span</h3></li>
+          <p>Inline element</p>
+          <p>e.g.</p>
+          <p>
+            <span class="highlight">Lorem</span> ipsum dolor sit amet,
+            consectetur adipisicing elit. Beatae, id!
+          </p>
+        </ul>
+      </li>
+      <li>
+        <h2>Semantic</h2>
+        <p>
+          For same cases we use these containers instead of the generic
+          containers to help search engine better understands the pages and what
+          they contain
+        </p>
+        <ul>
+          <li><h3>article</h3></li>
+          <p>An independent, self-contained content.</p>
+          <ul>
+            <li>Forum post</li>
+            <li>Comments</li>
+            <li>Reviews</li>
+            <li>Product cards</li>
+          </ul>
+          <li><h3>figure</h3></li>
+          <p>
+            An element for figures. It doesn't have any visual characteristics
+          </p>
+          <p>
+            Figure element can optionally have a caption (&lt;figcaption&gt;)
+            that can be above or below the figure.
+          </p>
+          <li><h3>mark</h3></li>
+          <p>Used to highlight text</p>
+          <li><h3>time</h3></li>
+          <p>Used to represent a specific period of time</p>
+          <p>
+            It may include the <em>datetime</em> attribute to translate dates
+            into machine-readable format.
+          </p>
+        </ul>
+        <p>e.g.</p>
+        <article class="article">
+          <h4>Heading</h4>
+          <p>
+            Published
+            <time datetime="2024-01-29 08:57">January 29 2024 08:57am</time>
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+            tempore odio autem ab, nesciunt rem exercitationem expedita corrupti
+            illo maiores consequuntur. Incidunt ex iste, ipsa assumenda optio
+            numquam perferendis nesciunt debitis animi vel suscipit architecto
+            accusantium! Adipisci recusandae, ratione quo suscipit magni saepe
+            doloribus, ullam nihil eos fugit eligendi cumque.
+          </p>
+          <figure>
+            <img
+              width="100px"
+              src="../../assets/images/black-dog.jpg"
+              alt="A picture of black dog wearing sweater"
+            />
+            <figcaption>A black dog</figcaption>
+          </figure>
+        </article>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic CSS</title>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <style>
+      .embedded-bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="../../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Provide Style</h2>
+      <ul>
+        <li>
+          <p class="embedded-bold">Embedded stylesheets</p>
+          <p>Styles are written inside the html documents</p>
+        </li>
+        <li>
+          <p class="external-bold">External Stylesheets</p>
+          <p>Styles are written in separate files</p>
+        </li>
+        <li>
+          <p style="font-weight: bold">In-line Styles</p>
+          <p>Styles are applied directly to a particular html element</p>
+        </li>
+      </ul>
+      <h2>Selectors</h2>
+      <ul>
+        <li>Basic</li>
+        <ul>
+          <li>
+            <h6>Type</h6>
+            <!-- h6 is used just to show the use of type selector -->
+            <p>e.g. body element the selector-> body{}</p>
+          </li>
+          <li>
+            <p id="identifier">Identifier</p>
+            <p>e.g. id="username" the selector-> #username{}</p>
+          </li>
+          <li>
+            <p class="bold">Class</p>
+            <p>e.g. class="black" the selector-> .black{}</p>
+          </li>
+          <li>
+            <p style="font-weight: bold">Attribute</p>
+            <p>
+              e.g.
+              <a href="https://www.google.com/" target="_blank">Google</a>
+              <a href="https://www.instagram.com/">Instagram</a>
+              (Check the code)
+              <!-- Lets apply styles for <a> element using attribute selector (check style.css) -->
+            </p>
+          </li>
+        </ul>
+        <li>Relational</li>
+        <p>
+          The selector select element based on the relationship with other
+          elements
+        </p>
+        <p>These selectors help us write cleaner markup, but..</p>
+        <ul>
+          <li>
+            they can be fragile, bc they're dependent on the location of these
+            elements in the DOM. so if the element is moved around, the styles
+            would break.
+          </li>
+          <li>
+            they are not as fast as basic selectors, you can barely see it, but
+            they are indeed lack of performance since they would need to read
+            more lines of code than necessary.
+          </li>
+        </ul>
+        <p>Relational selectors:</p>
+        <ul>
+          <li>
+            <p>" "</p>
+            <p>s1 s2{}</p>
+            <p>selects all the s2 inside the s1</p>
+          </li>
+          <li>
+            <p>></p>
+            <p>s1 > s2{}</p>
+            <p>selects the first s2 inside s1 (s2 is direct child of s1)</p>
+          </li>
+          <li>
+            <p>+</p>
+            <p>s1 + s2{}</p>
+            <p>
+              selects the first s2 that comes immediately after s1 (s2 is direct
+              sibling of s1)
+            </p>
+          </li>
+          <li>
+            <p>~</p>
+            <p>s1 ~ s2{}</p>
+            <p>selects all s2 that comes after s1 (s2 are sibling of s1)</p>
+          </li>
+        </ul>
+        <p>e.g.</p>
+        <!-- Lets apply styles for <p> inside the <div> using relational selector (check style.css)-->
+        <div id="products">
+          <!-- <p> below is the direct child of <div id=products> -->
+          <p>Lorem ipsum dolor sit amet.</p>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              rem.
+            </p>
+          </article>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+          tempora.
+        </p>
+        <!-- <p> above is the direct sibling of <div id=products> -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+          tempora.
+        </p>
+      </ul>
+      <p>Note:</p>
+      <ul>
+        <li>1 id can only be used by 1 element</li>
+        <li>1 class can be used multiple time by multiple elements</li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+body {
+  margin: 10px;
+}
+
+.nav {
+  list-style: none;
+}
+
+.external-bold {
+  font-weight: bold;
+}
+
+#identifier {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+/* Type selector */
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 0px;
+}
+
+/* Attribute selector */
+/* styles for <a> element that has 'target' attribute */
+a[target] {
+  color: red;
+}
+
+/* styles for <a> element that has 'target' attribute with the value '_blank' */
+a[target="_blank"] {
+  font-weight: bold;
+}
+
+/* styles for <a> element that has 'href' attribute with the value 'https://instagram.com/' (this will checking the exact match of the value)*/
+a[href="https://www.instagram.com/"]
+{
+  color: plum;
+}
+
+/* styles for <a> element that has 'href' attribute with the value 'instagram' (check if the value has the word 'instagram' in it)*/
+a[href*="instagram"] {
+  font-weight: bold;
+}
+
+/* styles for <a> element that has 'href' attribute with the value start with 'https' and end with '.com'*/
+a[href^="https"][href$=".com/"] {
+  text-decoration: none;
+}
+
+/* Relational selector */
+/*The '#products p{}' is called the descendant selector (represented by a white space character)*/
+/*this selector selects all the <p> inside <div> with id=products*/
+#products p {
+  color: orange;
+}
+
+/* to apply style only for the first <p> -> direct child of <div id=products> */
+/* > -> used to select the first <p> that comes immediately after <div id=products>*/
+#products > p {
+  color: palevioletred;
+}
+
+/* to apply style only for the <p> next to <div id=products> */
+/* + -> used to select <p> that comes immediately after #products */
+#products + p {
+  color: rgb(79, 171, 180);
+}
+
+/* to apply style for all the <p> that come after <div id=products> -> general siblings of <div id=products> */
+/* ~ -> used to select all <p> that comes immediately after #products */
+#products ~ p {
+  color: rgb(79, 171, 180);
+}

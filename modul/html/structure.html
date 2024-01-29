@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Structure</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="structure-eg.html">Example</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Structuring A Web Page</h1>
+      <section>
+        <h2>Common building blocks for a web page</h2>
+        <ul>
+          <li>&lt;header&gt;</li>
+          <ul>
+            <li>
+              &lt;nav&gt;
+              <ul>
+                <li>&lt;ul&gt;</li>
+                <ul>
+                  <li>&lt;li&gt;</li>
+                  <li>&lt;li&gt;</li>
+                  <li>&lt;li&gt;</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+          <li>&lt;main&gt;</li>
+          <ul>
+            <li>&lt;section&gt;</li>
+            <ul>
+              <li>&lt;h2&gt;</li>
+            </ul>
+            <li>&lt;section&gt;</li>
+            <ul>
+              <li>&lt;h2&gt;</li>
+            </ul>
+          </ul>
+          <li>&lt;aside&gt;</li>
+          <li>&lt;footer&gt;</li>
+          <ul>
+            <li>
+              &lt;nav&gt;
+              <ul>
+                <li>&lt;ul&gt;</li>
+                <ul>
+                  <li>&lt;li&gt;</li>
+                  <li>&lt;li&gt;</li>
+                  <li>&lt;li&gt;</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+        <p style="font-weight: bold">Bulding blocks:</p>
+        <ul style="list-style: square">
+          <li>
+            &lt;header&gt; is used to represent introductory content, which can
+            belong to a page, section or article.
+          </li>
+          <li>
+            &lt;main&gt; is used to represent the main content of the page.
+          </li>
+          <li>
+            &lt;footer&gt; is used to represent introductory content, which can
+            belong to a page, section or article.
+          </li>
+          <li>
+            &lt;aside&gt; is used as a side bar for advertising or other
+            contents that is not directly related to the main content.
+          </li>
+          <li>&lt;section&gt; is used to group related content.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Note</h2>
+        <ul style="list-style: square">
+          <li><p>Every page can have only 1 main element</p></li>
+          <li><p>Every section should have a heading</p></li>
+          <li>
+            &lt;header&gt; and &lt;footer&gt; can be used inside &lt;section&gt;
+            or &lt;article&gt;
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

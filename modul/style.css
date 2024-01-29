@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.satu {
+  display: inline-block;
+  padding: 10%;
+  width: 100vw;
+  background: linear-gradient(to right, #093f85, #4675d6);
+}
+
+.artikel {
+  /* display: inline-block; */
+  width: 50%;
+  cursor: pointer;
+}
+
+.atas {
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  background-image: url("../assets/images/black-dog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: top;
+}
+
+.bawah {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 40px 0;
+}
+
+.footer {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
+
+.footer h2 {
+  display: inline-block;
+  float: left;
+}
+
+.footer a {
+  display: inline-block;
+  float: right;
+}
+.artikel:hover .bawah {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.date {
+  margin: 20px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.dua {
+  display: inline-block;
+  width: 100%;
+}
+
+.card-wrap {
+  display: inline-block;
+  width: 100%;
+
+  margin: 30px 0;
+}
+
+.card {
+  float: left;
+  width: 24%;
+
+  margin: 0 2% 0 0;
+  border-radius: 20px;
+}
+
+.card:nth-child(3) {
+  margin: 0;
+}
+
+.card:nth-child(2) {
+  width: 48%;
+}
+
+.foto {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  /* aspect-ratio: 4/3; */
+  background-color: #093f85;
+  vertical-align: top;
+  border-radius: 20px;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.center {
+  width: 800px;
+  margin: 0 auto;
+}
