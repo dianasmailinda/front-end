@@ -17,6 +17,8 @@
       <nav>
         <ul class="nav">
           <li><a href="../../index.html">Home</a></li>
+          <li><a href="css-color.html">Colors</a></li>
+          <li><a href="css-gradient.html">Gradient</a></li>
         </ul>
       </nav>
     </header>
@@ -36,9 +38,10 @@
           <p>Styles are applied directly to a particular html element</p>
         </li>
       </ul>
+      <br />
       <h2>Selectors</h2>
       <ul>
-        <li>Basic</li>
+        <li class="bold">Basic</li>
         <ul>
           <li>
             <h6>Type</h6>
@@ -64,7 +67,7 @@
             </p>
           </li>
         </ul>
-        <li>Relational</li>
+        <li class="bold">Relational</li>
         <p>
           The selector select element based on the relationship with other
           elements
@@ -108,6 +111,7 @@
             <p>selects all s2 that comes after s1 (s2 are sibling of s1)</p>
           </li>
         </ul>
+        <br />
         <p>e.g.</p>
         <!-- Lets apply styles for <p> inside the <div> using relational selector (check style.css)-->
         <div id="products">
@@ -129,12 +133,103 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
           tempora.
         </p>
+        <br />
+        <p style="color: black">Note:</p>
+        <ul>
+          <li>1 id can only be used by 1 element</li>
+          <li>1 class can be used multiple time by multiple elements</li>
+        </ul>
+        <li><p class="bold">Pseudo-classes</p></li>
+        <p>Classes that browsers apply by default</p>
+        <ul>
+          <li>
+            :first-child
+            <article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                nemo quod vel. Aperiam, minus aut.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                animi consectetur rerum voluptatum totam? Officia.
+              </p>
+            </article>
+          </li>
+          <li>
+            :first-of-type
+            <div>
+              <h2>Heading</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                non ipsam facilis amet, laudantium nostrum?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur ut enim odit qui dolor odio.
+              </p>
+            </div>
+          </li>
+          <li>
+            :last-child
+            <div class="first">
+              <h2>Heading</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                non ipsam facilis amet, laudantium nostrum?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur ut enim odit qui dolor odio.
+              </p>
+            </div>
+          </li>
+          <li>
+            :nth-child()
+            <p>even</p>
+            <!-- lets style only the even items on the list bellow -->
+            <ul id="even">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+            </ul>
+            <p>odd</p>
+            <ul id="odd">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+              <li>Item 5</li>
+            </ul>
+          </li>
+          <li>
+            <p>:visited</p>
+            <a href="#">Link</a>
+          </li>
+        </ul>
+        <li><p class="bold">Pseudo-elements</p></li>
+        <p>Used to style a part of an element</p>
+        <h2>Heading</h2>
+        <p id="p-element">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          reiciendis similique molestias exercitationem facilis dolore?
+          Architecto culpa doloribus sequi ratione, reprehenderit itaque nisi
+          quia eum deleniti perspiciatis fugit fugiat, cum incidunt sapiente
+          odio molestiae possimus voluptatem porro? Necessitatibus eius nihil
+          non quod libero obcaecati culpa repellat? Dolores fugiat quidem
+          distinctio?
+        </p>
       </ul>
-      <p>Note:</p>
-      <ul>
-        <li>1 id can only be used by 1 element</li>
-        <li>1 class can be used multiple time by multiple elements</li>
-      </ul>
+      <h2>Selector Specifity</h2>
+      <ol>
+        <li>Identifier Selector</li>
+        <li>Class & Attribute Selectors</li>
+        <li>Element Selector</li>
+      </ol>
+      <article>
+        <h4 id="highl" class="highlight">Heading</h4>
+      </article>
     </main>
   </body>
 </html>

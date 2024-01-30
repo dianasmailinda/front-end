@@ -71,7 +71,123 @@ a[href^="https"][href$=".com/"] {
 }
 
 /* to apply style for all the <p> that come after <div id=products> -> general siblings of <div id=products> */
-/* ~ -> used to select all <p> that comes immediately after #products */
+/* ~ -> used to select all <p> that comes after #products */
 #products ~ p {
-  color: rgb(79, 171, 180);
+  color: #555;
+}
+
+/* pseudo-classes selector */
+article :first-child {
+  font-style: italic;
+  font-size: 25px;
+}
+
+div :first-of-type {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div p:first-of-type {
+  font-weight: bold;
+  color: deeppink;
+}
+
+.first p:last-child {
+  color: rgb(50, 239, 50);
+}
+
+#even li:nth-child(2n) {
+  color: deeppink;
+}
+
+#odd li:nth-child(2n-1) {
+  color: deeppink;
+}
+
+a:visited,
+a:link {
+  color: darkolivegreen;
+}
+
+a:hover,
+a:focus {
+  color: dodgerblue;
+}
+
+/* pseudo-elements selectors */
+#p-element::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+#p-element::first-line {
+  font-weight: bold;
+}
+
+#p-element::after {
+  content: "...";
+  display: block;
+}
+
+::selection {
+  background-color: pink;
+}
+
+h4 {
+  color: blue;
+}
+
+.highlight {
+  color: pink;
+}
+
+#highl {
+  color: aquamarine;
+}
+
+h4#highl {
+  color: yellow;
+}
+
+/* Colors */
+.boxrgb {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(16, 79, 180);
+}
+
+.boxrgba {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(16, 79, 180, 0.5);
+}
+
+.boxhex {
+  width: 100px;
+  height: 100px;
+  background-color: #104fb4;
+}
+
+.boxhsl {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(217, 84%, 38%);
+}
+
+.boxhsla {
+  width: 100px;
+  height: 100px;
+  background-color: hsla(217, 84%, 38%, 0.5);
+}
+
+.boxgrad {
+  width: 100px;
+  height: 100px;
+  background: rgb(206, 168, 168);
+  /*if browser doesnt support gradient then show this color*/
+  background: linear-gradient(
+    90deg,
+    rgba(206, 168, 168, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
