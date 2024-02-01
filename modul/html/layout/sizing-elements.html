@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing Elements</title>
+    <link rel="stylesheet" href="../../../css/sizing-element.css" />
+  </head>
+  <body>
+    <a href="../layout.html">Back</a>
+    <p>The boxes below are put inside div containers with:</p>
+    <p>width: 200px</p>
+    <p>height: 200px</p>
+    <br />
+    <h2>box-sizing: content-box</h2>
+    <p>
+      By default the width & height properties are applied to 'content box'. Any
+      padding or border we apply will increases the size of the visible box
+    </p>
+    <p></p>
+    <p>Now the size of the box is 260 x 260</p>
+    <div class="box"></div>
+    <br />
+    <h2>box-sizing: border-box</h2>
+    <div class="box2"></div>
+    <br />
+    <h2>display: block (default)</h2>
+    <p>
+      block level element => starts on a new line and fill up the entire width
+      of the page
+    </p>
+    <p>Thats why the 2nd box is below the 1st one</p>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <br />
+    <article class="inline">
+      <h2>display: inline</h2>
+      <p>inline level element ignores the width and height properties</p>
+      <p>Thats why the boxes look like this</p>
+      <br />
+      <div class="box2">Helo</div>
+      <div class="box2">Helo</div>
+    </article>
+    <br />
+    <br />
+    <article class="inline-block">
+      <h2>display: inline-block</h2>
+      <p>
+        We combine the inline level element (so it doesn't start on a new line)
+        and block level elements (so we can give it width & height)
+      </p>
+      <br />
+      <div class="box2">Helo</div>
+      <div class="box2">Helo</div>
+      <p>
+        If we look at the code, there are spaces in between 2 divs, that's why
+        there's a gap in between the 2 boxes
+      </p>
+      <p>We can remove the gap by putting the divs next to each other.</p>
+    </article>
+  </body>
+</html>

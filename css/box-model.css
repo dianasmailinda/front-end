@@ -1,0 +1,14 @@
+.box-model-eg :first-child {
+  border: 10px solid rgb(255, 234, 0);
+  padding: 10px 20px;
+}
+
+.para {
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.para2 {
+  padding: 0;
+  margin: 10px 20px;
+}

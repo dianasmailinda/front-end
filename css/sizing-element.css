@@ -1,0 +1,33 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid black;
+}
+/* by default the width & height properties are applied to 'content box' */
+/* any padding or border we apply will increases the size of the visible box */
+/* now the size of the box is 260 x 260 */
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+
+/* *,
+*::after,
+*::before {
+  box-sizing: border-box;
+} */
+
+.inline .box2 {
+  display: inline;
+}
+
+.inline-block .box2 {
+  display: inline-block;
+}
