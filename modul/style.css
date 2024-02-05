@@ -1,121 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 * {
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  /* background-color: red; */
+  box-shadow: 0px 0px 6px 1px #eaeaea;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  float: right;
+  /* background-color: yellow; */
+  margin-top: 5px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  /* background-color: white; */
+}
+
+li:last-child {
   margin: 0;
 }
 
-html,
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-}
-
-.satu {
+ul li a {
+  /* background-color: pink; */
+  line-height: 50px;
   display: inline-block;
-  padding: 10%;
-  width: 100vw;
-  background: linear-gradient(to right, #093f85, #4675d6);
+  font-family: "Oswald", sans-serif;
+  padding: 0 20px;
+  transition: 500ms ease;
+  border-radius: 6px;
+  color: #202020;
 }
 
-.artikel {
-  /* display: inline-block; */
-  width: 50%;
-  cursor: pointer;
+ul li a:hover {
+  background-color: #2d2d2d;
+  color: white;
+  /* padding: 0 30px; */
 }
 
-.atas {
+a img {
+  height: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.nav .menu {
+  height: 50px;
+  width: 250px;
   display: inline-block;
-  width: 100%;
-  aspect-ratio: 16/9;
   background-color: red;
-  background-image: url("../assets/images/black-dog.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  vertical-align: top;
 }
 
-.bawah {
-  display: inline-block;
+.nav img {
+  height: 50px;
+  padding: 10px;
   width: 100%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 0 0 40px 0;
+  display: inline-block;
+  background-color: yellow;
 }
 
-.footer {
+.nav .menu-text {
+  width: 200px;
   display: inline-block;
+  background-color: purple;
+  margin-top: 5px;
+}
+
+.nav span {
+  line-height: 20px;
   width: 100%;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nav .menu-img {
+  float: left;
+  width: 50px;
   height: 50px;
 }
 
-.footer h2 {
-  display: inline-block;
-  float: left;
+.pos .layer {
+  width: 400px;
+  height: 400px;
+  background-color: #aaa;
+  position: relative;
 }
 
-.footer a {
-  display: inline-block;
-  float: right;
-}
-.artikel:hover .bawah {
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-.date {
-  margin: 20px 0;
+.pos .btn {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
 }
 
-h1 {
-  text-transform: uppercase;
+main {
+  height: 2000px;
 }
 
-.dua {
-  display: inline-block;
+.pos {
+  width: 1000px;
+}
+.pos .fix {
   width: 100%;
+  height: 20px;
+  background-color: green;
+  position: fixed;
+  top: 100px;
+  left: 50px;
 }
 
-.card-wrap {
-  display: inline-block;
-  width: 100%;
-
-  margin: 30px 0;
+.pos .tengah {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(55, 99, 153);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.card {
-  float: left;
-  width: 24%;
-
-  margin: 0 2% 0 0;
-  border-radius: 20px;
+.layer .btn {
+  /* transform: translateX(0px); */
+  transition: 200ms right ease;
 }
 
-.card:nth-child(3) {
-  margin: 0;
+.layer:hover .btn {
+  /* transform: translate(-100px); */
+  right: 100px;
 }
 
-.card:nth-child(2) {
-  width: 48%;
-}
-
-.foto {
-  display: inline-block;
-  width: 100%;
-  height: 100px;
-  /* aspect-ratio: 4/3; */
-  background-color: #093f85;
-  vertical-align: top;
-  border-radius: 20px;
-}
-
-.caption {
-  display: block;
-  text-align: center;
-  padding: 10px;
-}
-
-.center {
-  width: 800px;
-  margin: 0 auto;
+.layer .calc {
+  width: calc(100% - 30px);
+  height: 30px;
+  background-color: rebeccapurple;
 }

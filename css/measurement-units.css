@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* px */
+.px .box {
+  width: 300px;
+  height: 300px;
+  background-color: gold;
+}
+
+/* % */
+.percent {
+  height: 600px;
+}
+
+.percent .box {
+  width: 50%;
+  height: 50%;
+  background-color: gold;
+}
+
+/* viewport */
+.viewport .box {
+  width: 50vw;
+  height: 50vh;
+  background-color: gold;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/* em/rem */
+.em .box {
+  font-size: 10px;
+  width: 15em;
+  height: 15rem;
+  background-color: gold;
+}

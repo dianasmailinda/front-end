@@ -1,14 +1,123 @@
-.box-model img {
-  width: 300px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav ul {
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-model img {
+  width: 300px;
 }
 
 .overflowing .box {
   margin-left: 40px;
   width: 200px;
   height: 200px;
-  border: 3px solid gold;
+  border: 5px solid gold;
+}
+
+.measurement-units table,
+.measurement-units th,
+.measurement-units td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td.no-line {
+  border: none;
+}
+
+.measurement-units th:first-child,
+.measurement-units td:first-child,
+.measurement-units td:nth-child(2) {
+  text-align: center;
+  width: 70px;
+}
+
+.measurement-units table {
+  margin-left: 10px;
+}
+
+section {
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.header-nav {
+  height: 50px;
+  width: 100%;
+  padding: 5px 25px;
+  position: fixed;
+  box-shadow: 0px 0px 4px 1px #eaeaea;
+  background-color: white;
+  z-index: 999;
+}
+
+.main-nav li,
+.main-nav a {
+  display: inline-block;
+}
+
+.main-nav a {
+  color: rgb(34, 34, 34);
+  line-height: 40px;
+}
+
+.main-nav ul {
+  float: right;
+}
+
+.main-nav li {
+  margin-left: 20px;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.btn-top {
+  width: 50px;
+  height: 30px;
+  position: fixed;
+  right: 47px;
+  bottom: 47px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 4px;
+}
+
+.btn-top a {
+  font-weight: bold;
+  color: rgb(255, 254, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eg {
+  width: 50px;
+  height: 30px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 4px;
+}
+
+.eg a {
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgb(255, 254, 245);
 }

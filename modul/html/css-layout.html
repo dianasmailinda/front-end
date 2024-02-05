@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="../../css/styles-part2.css" />
+  </head>
+  <body>
+    <header class="header-nav">
+      <div class="wrapper">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="css-1.html">Back</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#sizing-elements">Sizing Elements</a></li>
+            <li><a href="#overflowing">Overflowing</a></li>
+            <li><a href="#measurement-units">Measurement Units</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="btn-top">
+          <a href="#toc">TOP</a>
+        </div>
+
+        <section id="toc" class="toc">
+          <div><h1>Layout</h1></div>
+          <ul>
+            <li><a href="css-1.html">Back</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#sizing-elements">Sizing Elements</a></li>
+            <li><a href="#overflowing">Overflowing</a></li>
+            <li><a href="#measurement-units">Measurement Units</a></li>
+          </ul>
+        </section>
+
+        <section id="box-model" class="box-model">
+          <h2>The Box Model</h2>
+          <p>Browsers render elements inside an invisible box</p>
+          <img
+            src="../../assets/images/box-model.png"
+            alt="A Picture of Box Model"
+          />
+          <br />
+          <div class="eg">
+            <a href="css-layout/box-model.html">e.g.</a>
+          </div>
+        </section>
+
+        <section id="sizing-elements">
+          <h2>Sizing Elements</h2>
+          <ul>
+            <li>box sizing</li>
+            <li>display</li>
+          </ul>
+          <div class="eg">
+            <a href="css-layout/sizing-elements.html">e.g.</a>
+          </div>
+        </section>
+
+        <section id="overflowing" class="overflowing">
+          <h2>Overflow</h2>
+          <p>When the content can not fit in the container.</p>
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              provident doloribus beatae dolorum natus eligendi suscipit ex
+              maiores optio! Est nobis deserunt accusamus eveniet possimus, ad
+              dolorum rem alias, ipsa minus omnis? Veritatis odio vel minima
+              consequuntur molestias accusamus sequi laboriosam nostrum natus,
+              doloribus voluptatibus animi quaerat dolore tempore impedit.
+            </p>
+          </div>
+          <br /><br /><br /><br />
+          <p>
+            To control how overflow should behave we can use overflow property.
+          </p>
+          <div class="eg"><a href="css-layout/overflowing.html">e.g.</a></div>
+        </section>
+
+        <section id="measurement-units" class="measurement-units">
+          <h2>Measurement Units</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Absolute</th>
+                <th colspan="2">Relative</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="no-line">px</td>
+                <td>%</td>
+                <td>Relative to the size of the container</td>
+              </tr>
+              <tr>
+                <td class="no-line"></td>
+                <td>vw</td>
+                <td rowspan="2">Relative to the viewport</td>
+              </tr>
+              <tr>
+                <td class="no-line"></td>
+                <td>vh</td>
+              </tr>
+              <tr>
+                <td class="no-line"></td>
+                <td>em</td>
+                <td rowspan="2">Relative to the font size</td>
+              </tr>
+              <tr>
+                <td class="no-line"></td>
+                <td>rem</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="eg">
+            <a href="css-layout/measurement-units.html">e.g.</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

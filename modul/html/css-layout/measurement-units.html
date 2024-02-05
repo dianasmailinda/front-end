@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurement Units</title>
+    <link rel="stylesheet" href="../../../css/measurement-units.css" />
+  </head>
+  <body>
+    <a href="../css-layout.html">Back</a>
+    <section class="px">
+      <h2>px</h2>
+      <p>The size will remain the same on any screen size</p>
+      <div class="box"></div>
+      <p>width: 300px</p>
+      <p>height: 300px</p>
+      <br />
+    </section>
+
+    <section class="percent">
+      <h2>%</h2>
+      <p>The size relative to its parent</p>
+      <div class="box"></div>
+      <p>width: 50% (parent's width: undefined)</p>
+      <p>height: 50% (parent's height: 600px)</p>
+      <br />
+      <p>Note:</p>
+      <ul>
+        <li>
+          <p>
+            If the width of the parent isn't set, it will set to 100% of the
+            window size by default. Therefore, the width of the box above is
+            dependent to the width of the window. (Resize the window to see)
+          </p>
+        </li>
+        <li>
+          <p>
+            If the height of the parent isn't set, a block level element height
+            is 0 by default
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="viewport">
+      <h2>viewport</h2>
+      <p>The size relative to the viewport</p>
+      <div class="box"></div>
+      <p>width: 50vw</p>
+      <p>height: 50vh</p>
+      <br />
+    </section>
+
+    <section class="em">
+      <h2>em/rem</h2>
+      <p>em: The size relative to the font size of the current element</p>
+      <p>
+        rem: The size relative to the font size of the root element (html
+        element = 16px)
+      </p>
+      <div class="box"></div>
+      <p>font-size: 10px</p>
+      <p>width: 15em (15 x 10px)</p>
+      <p>height: 15rem (15 x 16px)</p>
+    </section>
+  </body>
+</html>
