@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <link rel="stylesheet" href="../../../css/positioning.css" />
+  </head>
+  <body>
+    <a href="../css-layout.html">Back</a>
+    <h2>Static (Normal Position) => Default</h2>
+    <div class="boxes">
+      <div class="box box-one"></div>
+      <div class="box box-two"></div>
+      <div class="box box-three"></div>
+    </div>
+    <h2>Relative</h2>
+    <div class="boxes-rel">
+      <div class="box box-one-rel"></div>
+      <div class="box box-two-rel"></div>
+      <div class="box box-three-rel"></div>
+    </div>
+    <p>Note:</p>
+    <p>
+      If the stacking order is undefined, the order will follow the order of
+      them in the DOM. We can set it using z-index.
+    </p>
+    <br />
+    <p>+ => closer to us</p>
+    <p>- => away from us</p>
+    <br />
+    <div class="boxes-rel">
+      <div class="box box-one-rel"></div>
+      <div class="box box-two-rel index"></div>
+      <div class="box box-three-rel"></div>
+    </div>
+    <h2>Absolute</h2>
+    <div class="boxes-abs">
+      <div class="box box-one-abs"></div>
+      <div class="box box-two-abs"></div>
+      <div class="box box-three-abs"></div>
+    </div>
+    <p>Note:</p>
+    <p>
+      !!To position an element absolutely, we must first position the container
+      relatively
+    </p>
+    <br />
+    <p>
+      When we position an element absolutely, the element will be removed from
+      the normal flow of the page. Means from the parent's POV, that element
+      doesn't exist.
+    </p>
+    <p>We can imagine as if its on a separate layer.</p>
+    <p>So now we got 2 layers.</p>
+    <p>1 for container, pink, and blue.</p>
+    <p>1 for yellow</p>
+    <br />
+    <p>
+      That's why the blue replace the yellow position, because the container can
+      only see blue and pink now.
+    </p>
+    <br />
+    <h2>Fixed</h2>
+    <div class="boxes-fix">
+      <div class="box box-one-fix"></div>
+      <div class="box box-two-fix">position: fixed</div>
+      <div class="box box-three-fix"></div>
+    </div>
+  </body>
+</html>

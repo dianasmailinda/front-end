@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tweet {
+  width: 300px;
+  border: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.tweet-l {
+  width: 300px;
+  border: 2px solid lightgray;
+  margin-bottom: 80px;
+}
+
+.avatar-l {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.tweet-r {
+  width: 300px;
+  border: 2px solid lightgray;
+  margin-bottom: 80px;
+}
+
+.avatar-r {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: right;
+}
+
+.clear {
+  /*clear property is used to clear the float that is applied to the element. The value can be 'left', 'right', or 'both'*/
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

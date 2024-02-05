@@ -16,6 +16,8 @@
             <li><a href="#sizing-elements">Sizing Elements</a></li>
             <li><a href="#overflowing">Overflowing</a></li>
             <li><a href="#measurement-units">Measurement Units</a></li>
+            <li><a href="#positioning">Positioning</a></li>
+            <li><a href="#floating-elements">Floating Elements</a></li>
           </ul>
         </nav>
       </div>
@@ -34,6 +36,8 @@
             <li><a href="#sizing-elements">Sizing Elements</a></li>
             <li><a href="#overflowing">Overflowing</a></li>
             <li><a href="#measurement-units">Measurement Units</a></li>
+            <li><a href="#positioning">Positioning</a></li>
+            <li><a href="#floating-elements">Floating Elements</a></li>
           </ul>
         </section>
 
@@ -118,6 +122,60 @@
           </table>
           <div class="eg">
             <a href="css-layout/measurement-units.html">e.g.</a>
+          </div>
+        </section>
+
+        <section id="positioning" class="positioning">
+          <h2>Positioning</h2>
+          <h3>Static</h3>
+          <p>
+            By default the position of all elements is
+            <strong>static</strong> => not positioned, they appear exactly in
+            their normal position
+          </p>
+          <br />
+          <h3>Relative</h3>
+          <p>
+            To position an element we set it to <strong>relative</strong> so we
+            can position this element relative to its normal position
+          </p>
+          <br />
+          <h3>Absolute</h3>
+          <p>Positioning an element relative to its container</p>
+          <br />
+          <h3>Fixed</h3>
+          <p>Positioning an element relative to viewport</p>
+          <div class="eg">
+            <a href="css-layout/positioning.html">e.g.</a>
+          </div>
+        </section>
+
+        <section id="floating-elements" class="floating-elements">
+          <h2>Floating Elements</h2>
+          <br />
+          <h3>float: left</h3>
+          <p>
+            The element will float to the left side of the container and all the
+            following elements will flow around it
+          </p>
+          <br />
+          <h3>float: right</h3>
+          <p>
+            The element will float to the right side of the container and all
+            the following elements will flow around it
+          </p>
+          <br />
+          <p>Note:</p>
+          <p>
+            - Float can be tricky. Whenever we use it, we have to clear it
+            after, so it wont damage the other elements.
+          </p>
+          <p>
+            - It is not recommended to use float for layout, since now we have
+            FlexBox and Grid
+          </p>
+          <div class="eg">
+            <a href="css-layout/floating-elements.html">e.g.</a>
           </div>
         </section>
       </div>

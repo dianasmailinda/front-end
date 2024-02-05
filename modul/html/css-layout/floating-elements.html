@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Elements</title>
+    <link rel="stylesheet" href="../../../css/floating-elements.css" />
+  </head>
+  <body>
+    <a href="../css-layout.html">Back </a>
+
+    <h2>Default</h2>
+    <article class="tweet">
+      <div class="avatar"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae
+        nemo, earum iste ullam esse harum voluptate hic dicta. Saepe perferendis
+        unde porro eum beatae impedit qui non, voluptatem autem molestiae quasi
+        totam voluptate odit quam aperiam vitae. Molestiae, eaque!
+      </p>
+    </article>
+
+    <h2>float: left</h2>
+    <article class="tweet-l">
+      <div class="avatar-l"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+    <article class="tweet-l">
+      <div class="avatar-l"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae
+        nemo, earum iste ullam esse harum voluptate hic dicta. Saepe perferendis
+        unde porro eum beatae impedit qui non, voluptatem autem molestiae quasi
+        totam voluptate odit quam aperiam vitae. Molestiae, eaque!
+      </p>
+    </article>
+
+    <h2>float: right</h2>
+    <article class="tweet-r">
+      <div class="avatar-r"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+    <article class="tweet-r">
+      <div class="avatar-r"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae
+        nemo, earum iste ullam esse harum voluptate hic dicta. Saepe perferendis
+        unde porro eum beatae impedit qui non, voluptatem autem molestiae quasi
+        totam voluptate odit quam aperiam vitae. Molestiae, eaque!
+      </p>
+    </article>
+
+    <h2>clear</h2>
+    <p>We use clear for the 2nd paragraph so it will appear under the avatar</p>
+    <br />
+    <article class="tweet-l">
+      <div class="avatar-l"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae
+        nemo, earum iste ullam esse harum voluptate hic dicta. Saepe perferendis
+        unde porro eum beatae impedit qui non, voluptatem autem molestiae quasi
+        totam voluptate odit quam aperiam vitae. Molestiae, eaque!
+      </p>
+    </article>
+
+    <h2>Parent Collapsing</h2>
+    <p>
+      This happens because by default, container doesn't see the floated
+      elements
+    </p>
+    <br />
+    <article class="tweet-l">
+      <div class="avatar-l"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+    <p>
+      To fix this problem we add a div applied with clear property at the end.
+      But we can't put it in our html code, because it is not semantic.
+    </p>
+    <p>We add a div from our stylesheet using pseudo selector ::after</p>
+    <br />
+    <article class="tweet-l clearfix">
+      <div class="avatar-l"></div>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+  </body>
+</html>

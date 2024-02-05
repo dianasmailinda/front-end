@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  border: 10px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box-one {
+  background-color: pink;
+}
+
+.box-two {
+  background-color: rgb(255, 231, 201);
+}
+
+.box-three {
+  background-color: rgb(175, 195, 255);
+}
+
+/* position: relative */
+
+.boxes-rel {
+  border: 10px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.box-one-rel {
+  background-color: pink;
+}
+
+.box-two-rel {
+  background-color: rgb(255, 231, 201);
+  position: relative;
+  left: 80px;
+  bottom: 20px;
+}
+
+.box-three-rel {
+  background-color: rgb(175, 195, 255);
+}
+
+.index {
+  z-index: -1;
+}
+
+/* position: absolute */
+
+.boxes-abs {
+  border: 10px solid lightgray;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.box-one-abs {
+  background-color: pink;
+}
+
+.box-two-abs {
+  background-color: rgb(255, 231, 201);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box-three-abs {
+  background-color: rgb(175, 195, 255);
+}
+
+/* position: fixed */
+
+.boxes-fix {
+  border: 10px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.box-one-fix {
+  background-color: pink;
+}
+
+.box-two-fix {
+  background-color: rgb(255, 231, 201);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.box-three-fix {
+  background-color: rgb(175, 195, 255);
+}
