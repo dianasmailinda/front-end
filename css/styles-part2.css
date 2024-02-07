@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .wrapper {
   width: 1300px;
   margin: 0 auto;
@@ -124,4 +128,14 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.flexbox ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.flexbox img {
+  width: 200px;
+  margin: 20px 40px;
 }

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="../../../css/flexbox.css" />
+  </head>
+  <body>
+    <div class="odd">
+      <a href="../css-layout.html">Back</a>
+    </div>
+
+    <article class="odd">
+      <h2>Normal Position</h2>
+      <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+      </div>
+    </article>
+
+    <article>
+      <h2>Horizontal</h2>
+      <p>Enable flex in container.</p>
+      <p>
+        By default <span class="bold">flex-dirextion: row</span>. Thats why the
+        boxes are now laid out horizontally
+      </p>
+      <div class="container-h">
+        <div class="box-h">A</div>
+        <div class="box-h">B</div>
+        <div class="box-h">C</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Center Horizontally</h3>
+      <p>Move content to <span class="bold">center</span></p>
+      <p><span class="bold">justify content: center</span>.</p>
+      <div class="container-c">
+        <div class="box-c">A</div>
+        <div class="box-c">B</div>
+        <div class="box-c">C</div>
+      </div>
+    </article>
+
+    <article>
+      <h3>Right</h3>
+      <p>Move content to <span class="bold">right</span></p>
+      <p><span class="bold">justify content: flex-end</span>.</p>
+      <div class="container-r">
+        <div class="box-r">A</div>
+        <div class="box-r">B</div>
+        <div class="box-r">C</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Spaces</h3>
+      <p>Distribute items with equal space inbetween them</p>
+      <p><span class="bold">justify content: space-evenly</span>.</p>
+      <div class="container-se">
+        <div class="box-se">A</div>
+        <div class="box-se">B</div>
+        <div class="box-se">C</div>
+      </div>
+      <br />
+      <br />
+      <p><span class="bold">justify content: space-around</span>.</p>
+      <div class="container-sa">
+        <div class="box-sa">A</div>
+        <div class="box-sa">B</div>
+        <div class="box-sa">C</div>
+      </div>
+      <br />
+      <br />
+      <p><span class="bold">justify content: space-between</span>.</p>
+      <div class="container-sb">
+        <div class="box-sb">A</div>
+        <div class="box-sb">B</div>
+        <div class="box-sb">C</div>
+      </div>
+    </article>
+
+    <article>
+      <h3>Center Vertically</h3>
+      <p>Move content to <span class="bold">bottom</span></p>
+      <p><span class="bold">align-items: flex-end</span>.</p>
+      <div class="container-cv">
+        <div class="box-cv">A</div>
+        <div class="box-cv">B</div>
+        <div class="box-cv">C</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Bottom</h3>
+      <p>Move content to <span class="bold">bottom</span></p>
+      <p><span class="bold">align-items: flex-end</span>.</p>
+      <div class="container-b">
+        <div class="box-b">A</div>
+        <div class="box-b">B</div>
+        <div class="box-b">C</div>
+      </div>
+    </article>
+
+    <article>
+      <h2>Vertical</h2>
+      <p><span class="bold">flex-dirextion: column</span>.</p>
+      <div class="container-v">
+        <div class="box-v">A</div>
+        <div class="box-v">B</div>
+        <div class="box-v">C</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Center Horizontally</h3>
+      <p><span class="bold">align-items: center</span>.</p>
+      <div class="container-vc">
+        <div class="box-vc">A</div>
+        <div class="box-vc">B</div>
+        <div class="box-vc">C</div>
+      </div>
+    </article>
+
+    <article>
+      <h3>Right</h3>
+      <p><span class="bold">align-items: flex-end</span>.</p>
+      <div class="container-vr">
+        <div class="box-vr">A</div>
+        <div class="box-vr">B</div>
+        <div class="box-vr">C</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Spaces</h3>
+      <div class="vspacer">
+        <div class="vspace">
+          <p><span class="bold">justify-content: space-evenly</span>.</p>
+          <div class="container-vse">
+            <div class="box-vse">A</div>
+            <div class="box-vse">B</div>
+            <div class="box-vse">C</div>
+          </div>
+        </div>
+        <div class="vspace">
+          <p><span class="bold">justify-content: space-around</span>.</p>
+          <div class="container-vsa">
+            <div class="box-vsa">A</div>
+            <div class="box-vsa">B</div>
+            <div class="box-vsa">C</div>
+          </div>
+        </div>
+        <div class="vspace">
+          <p><span class="bold">justify-content: space-between</span>.</p>
+          <div class="container-vsb">
+            <div class="box-vsb">A</div>
+            <div class="box-vsb">B</div>
+            <div class="box-vsb">C</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <h3>Align Self</h3>
+      <p>Align individual content</p>
+      <div class="container-ml">
+        <div class="box-ml">A</div>
+        <div class="box-ml">B</div>
+        <div class="box-ml">C</div>
+        <div class="box-ml">D</div>
+        <div class="box-ml">E</div>
+        <div class="box-ml">F</div>
+        <div class="box-ml">G</div>
+        <div class="box-ml">H</div>
+        <div class="box-ml">I</div>
+        <div class="box-ml">J</div>
+        <div class="box-ml">K</div>
+        <div class="box-ml">L</div>
+        <div class="box-ml">M</div>
+        <div class="box-ml box-one">N</div>
+      </div>
+    </article>
+
+    <article class="odd">
+      <h3>Align Content</h3>
+      <p>Distribute content on multiple lines</p>
+      <p>
+        This is what happens when we put too many contents in a container, each
+        content will adjust its size to fit inside the container as one line
+      </p>
+      <div class="container-cv">
+        <div class="box-cv">A</div>
+        <div class="box-cv">B</div>
+        <div class="box-cv">C</div>
+        <div class="box-cv">D</div>
+        <div class="box-cv">E</div>
+        <div class="box-cv">F</div>
+        <div class="box-cv">G</div>
+        <div class="box-cv">H</div>
+        <div class="box-cv">I</div>
+        <div class="box-cv">J</div>
+        <div class="box-cv">K</div>
+        <div class="box-cv">L</div>
+        <div class="box-cv">M</div>
+        <div class="box-cv">N</div>
+      </div>
+      <br />
+      <p>
+        We can push these contents to appear in new line instead so it wont
+        change the size of the content
+      </p>
+      <p><span class="bold">flex-wrap: wrap</span>.</p>
+      <div class="container-ml">
+        <div class="box-ml">A</div>
+        <div class="box-ml">B</div>
+        <div class="box-ml">C</div>
+        <div class="box-ml">D</div>
+        <div class="box-ml">E</div>
+        <div class="box-ml">F</div>
+        <div class="box-ml">G</div>
+        <div class="box-ml">H</div>
+        <div class="box-ml">I</div>
+        <div class="box-ml">J</div>
+        <div class="box-ml">K</div>
+        <div class="box-ml">L</div>
+        <div class="box-ml">M</div>
+        <div class="box-ml">N</div>
+      </div>
+      <br />
+      <p>
+        To distribute the content along vertical axis, we can use align-content
+        property
+      </p>
+      <p><span class="bold">align-content: center</span>.</p>
+      <div class="container-ac">
+        <div class="box-ac">A</div>
+        <div class="box-ac">B</div>
+        <div class="box-ac">C</div>
+        <div class="box-ac">D</div>
+        <div class="box-ac">E</div>
+        <div class="box-ac">F</div>
+        <div class="box-ac">G</div>
+        <div class="box-ac">H</div>
+        <div class="box-ac">I</div>
+        <div class="box-ac">J</div>
+        <div class="box-ac">K</div>
+        <div class="box-ac">L</div>
+        <div class="box-ac">M</div>
+        <div class="box-ac">N</div>
+      </div>
+    </article>
+
+    <article>
+      <h2>Sizing Items</h2>
+      <h3>Grow</h3>
+      <div class="container-h">
+        <div class="box-h box-fg1">
+          A
+          <p><span class="bold">flex-grow: 1</span>.</p>
+        </div>
+        <div class="box-h box-fg2">
+          B
+          <p><span class="bold">flex-grow: 3</span>.</p>
+        </div>
+        <div class="box-h box-fg2">
+          C
+          <p><span class="bold">flex-grow: 3</span>.</p>
+        </div>
+      </div>
+      <p>This is how the browser calculate it</p>
+      <p>sum(flex-grow)</p>
+      <p>= 1+3+3</p>
+      <p>= 7</p>
+      <br />
+      <p>
+        The browser then will devide the available space to 7 slices. Give 1
+        slice to content A and 3 slices each for content B and C
+      </p>
+    </article>
+
+    <article class="odd">
+      <h3>Shrink</h3>
+      <div class="container-s">
+        <div class="box-s box-one">
+          A
+          <p><span class="bold">flex-shrink: 0</span>.</p>
+        </div>
+        <div class="box-s">
+          B
+          <p><span class="bold">flex-shrink: 1</span>.</p>
+        </div>
+        <div class="box-s">
+          C
+          <p><span class="bold">flex-shrink: 1</span>.</p>
+        </div>
+      </div>
+      <p>(Resize the window to see)</p>
+    </article>
+
+    <article class="odd">
+      <h3>Flex (Shorthand)</h3>
+      <div class="container-flex">
+        <div class="box-flex">A</div>
+        <div class="box-flex">B</div>
+        <div class="box-flex">C</div>
+      </div>
+    </article>
+  </body>
+</html>
