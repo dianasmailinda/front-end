@@ -326,8 +326,3 @@ article {
   margin: 10px;
   flex: 2 1 auto;
 }
-
-.flexbox ul li {
-  list-style: circle;
-  background-color: aqua;
-}
