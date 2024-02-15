@@ -160,7 +160,7 @@ section {
 }
 
 .tabel {
-  height: 80%;
+  height: 50%;
   font-size: 2vw;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -185,4 +185,9 @@ section {
 
 .orange {
   color: rgb(198, 129, 1);
+}
+
+.media-query li {
+  list-style: disc;
+  list-style-position: inside;
 }
