@@ -19,6 +19,7 @@
             <li><a href="#positioning">Positioning</a></li>
             <li><a href="#floating-elements">Floating Elements</a></li>
             <li><a href="#flexbox">FlexBox</a></li>
+            <li><a href="#grid">Grid</a></li>
           </ul>
         </nav>
       </div>
@@ -40,16 +41,14 @@
             <li><a href="#positioning">Positioning</a></li>
             <li><a href="#floating-elements">Floating Elements</a></li>
             <li><a href="#flexbox">FlexBox</a></li>
+            <li><a href="#grid">Grid</a></li>
           </ul>
         </section>
 
         <section id="box-model" class="box-model">
           <h2>The Box Model</h2>
           <p>Browsers render elements inside an invisible box</p>
-          <img
-            src="../../assets/images/box-model.png"
-            alt="A Picture of Box Model"
-          />
+          <img src="../../assets/images/box-model.png" alt="A Picture of Box Model" />
           <br />
           <div class="eg">
             <a href="css-layout/box-model.html">e.g.</a>
@@ -72,18 +71,12 @@
           <p>When the content can not fit in the container.</p>
           <div class="box">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              provident doloribus beatae dolorum natus eligendi suscipit ex
-              maiores optio! Est nobis deserunt accusamus eveniet possimus, ad
-              dolorum rem alias, ipsa minus omnis? Veritatis odio vel minima
-              consequuntur molestias accusamus sequi laboriosam nostrum natus,
-              doloribus voluptatibus animi quaerat dolore tempore impedit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque provident doloribus beatae dolorum natus eligendi suscipit ex maiores optio! Est nobis deserunt accusamus eveniet possimus, ad dolorum rem alias, ipsa minus omnis? Veritatis
+              odio vel minima consequuntur molestias accusamus sequi laboriosam nostrum natus, doloribus voluptatibus animi quaerat dolore tempore impedit.
             </p>
           </div>
           <br /><br /><br /><br />
-          <p>
-            To control how overflow should behave we can use overflow property.
-          </p>
+          <p>To control how overflow should behave we can use overflow property.</p>
           <div class="eg"><a href="css-layout/overflowing.html">e.g.</a></div>
         </section>
 
@@ -132,15 +125,11 @@
           <h3>Static</h3>
           <p>
             By default the position of all elements is
-            <strong>static</strong> => not positioned, they appear exactly in
-            their normal position
+            <strong>static</strong> => not positioned, they appear exactly in their normal position
           </p>
           <br />
           <h3>Relative</h3>
-          <p>
-            To position an element we set it to <strong>relative</strong> so we
-            can position this element relative to its normal position
-          </p>
+          <p>To position an element we set it to <strong>relative</strong> so we can position this element relative to its normal position</p>
           <br />
           <h3>Absolute</h3>
           <p>Positioning an element relative to its container</p>
@@ -156,26 +145,14 @@
           <h2>Floating Elements</h2>
           <br />
           <h3>float: left</h3>
-          <p>
-            The element will float to the left side of the container and all the
-            following elements will flow around it
-          </p>
+          <p>The element will float to the left side of the container and all the following elements will flow around it</p>
           <br />
           <h3>float: right</h3>
-          <p>
-            The element will float to the right side of the container and all
-            the following elements will flow around it
-          </p>
+          <p>The element will float to the right side of the container and all the following elements will flow around it</p>
           <br />
           <p>Note:</p>
-          <p>
-            - Float can be tricky. Whenever we use it, we have to clear it
-            after, so it wont damage the other elements.
-          </p>
-          <p>
-            - It is not recommended to use float for layout, since now we have
-            FlexBox and Grid
-          </p>
+          <p>- Float can be tricky. Whenever we use it, we have to clear it after, so it wont damage the other elements.</p>
+          <p>- It is not recommended to use float for layout, since now we have FlexBox and Grid</p>
           <div class="eg">
             <a href="css-layout/floating-elements.html">e.g.</a>
           </div>
@@ -205,6 +182,75 @@
           </ul>
           <div class="eg">
             <a href="css-layout/flexbox.html">e.g.</a>
+          </div>
+        </section>
+
+        <section id="grid" class="grid">
+          <h2>Grid</h2>
+          <br />
+          <p>Used to lay out elements in both rows and columns</p>
+          <br />
+          <p>CSS properties:</p>
+          <ul>
+            <li>grid-template-rows : (size of r1) (size of r2) ..</li>
+            <li>grid-template-columns : (size of c1) (size of c2) ..</li>
+            <li>grid-template : (size of r1) (size of r2) .. / (size of c1) (size of c2) ..</li>
+          </ul>
+          <br />
+          <h3>Aligning Items</h3>
+          <ul>
+            <li>
+              justify-items
+              <p>Align items along horizontal axis</p>
+            </li>
+            <li>
+              align-items
+              <p>Align items along vertical axis</p>
+            </li>
+          </ul>
+          <br />
+          <p>
+            <span style="text-decoration: underline">Note:</span> <br />
+            The default value for these properties is <strong>stretch</strong>
+          </p>
+
+          <br />
+          <h3>Aligning Grid</h3>
+          <ul>
+            <li>
+              justify-content
+              <p>Align grid along horizontal axis</p>
+            </li>
+            <li>
+              align-content
+              <p>Align grid along vertical axis</p>
+            </li>
+          </ul>
+
+          <br />
+          <h3>Placing Items</h3>
+          <ul>
+            <li>
+              Using Line Numbers
+              <p>Set individual item to <em>start at</em> or to<em> end at</em> specific line number.</p>
+            </li>
+
+            <li>
+              Using Area Names
+              <ul>
+                <li>
+                  grid-template-areas
+                  <p>to define the areas on the container</p>
+                </li>
+                <li>
+                  grid-area
+                  <p>to set an individual area to a particular area that has been defined before</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="eg">
+            <a href="css-layout/grid.html">e.g.</a>
           </div>
         </section>
       </div>

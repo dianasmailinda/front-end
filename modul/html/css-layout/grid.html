@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="../../../css/grid.css" />
+  </head>
+  <body>
+    <a href="../css-layout.html">Back</a>
+    <h2>Ways to apply grid</h2>
+    <br />
+    <p>
+      grid-template-rows: 100px 100px 100px; <br />
+      grid-template-columns: 100px 100px;
+    </p>
+    <div class="container-satu"></div>
+    <br />
+    <p>
+      grid-template-rows: repeat(3, 100px); <br />
+      grid-template-columns: repeat(2, 100px);
+    </p>
+    <div class="container-dua"></div>
+    <br />
+    <p>grid-template: repeat(3, 100px) / repeat(2, 100px);</p>
+    <div class="container-tiga"></div>
+    <br />
+
+    <br />
+    <h2>Aligning</h2>
+    <h3>Normal Position</h3>
+    <div class="container-empat">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+    </div>
+    <br />
+    <h3>Items to Center</h3>
+    <div class="container-lima">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+    </div>
+    <br />
+    <h3>Grid to Center</h3>
+    <div class="container-enam">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+      <div class="box">D</div>
+    </div>
+
+    <br />
+    <br />
+    <h2>Track-sizing</h2>
+    <h3>Set the exact number</h3>
+    <p>grid-template: repeat(3, 100px) / repeat(2, 100px);</p>
+    <div class="container-track">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <p>The items fill the entire track because by default it is set to <em>stretch</em></p>
+
+    <br />
+    <h3>Set to fill available space</h3>
+    <p>grid-template: repeat(3, 100px) / 30fr 70fr</p>
+    <div class="container-tujuh">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+
+    <br />
+    <p>grid-template: 100px auto 100px / 30fr 70fr</p>
+    <div class="container-lapan">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+
+    <br /><br />
+    <h2>Gap</h2>
+    <h3>Row Gap</h3>
+    <div class="container-9">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <h3>Column Gap</h3>
+    <div class="container-10">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <h3>Row & Column Gap</h3>
+    <p>gap: 10px;</p>
+    <div class="container-11">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <p>gap: 10px 40px;</p>
+    <div class="container-12">
+      <div class="items">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+
+    <br /><br />
+    <h2>Placing Items</h2>
+    <br />
+    <h3>Using Line Numbers</h3>
+    <h4>Start at</h4>
+    <p>Set item A to start at 2nd row / 2nd column</p>
+    <p>
+      grid-row: 2; <br />
+      grid-column: 2;
+    </p>
+    <div class="container-11">
+      <div class="items item-salong">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <p>grid-area: 2 / 2;</p>
+    <div class="container-11">
+      <div class="items item-sashort">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+
+    <h4>Grid Span</h4>
+    <p>Set items to take up 2 or more cells</p>
+    <br />
+    <h5>Row</h5>
+    <p>Set item A to start at 1st row and take up 3 cells of row</p>
+    <p>grid-row: 1 / 4;</p>
+    <div class="container-11">
+      <div class="items item-spanrow">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <p>
+      Or we can also use the <em>span</em> keyword to specify how many cells this item will gonna take: <br />
+      grid-row: 1 / span 3;
+    </p>
+    <div class="container-11">
+      <div class="items item-spanrows">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <h5>Column</h5>
+    <p>
+      Set item A to start at 1st column and take up 2 cells of column <br />
+      grid-column: 1 / 3;
+    </p>
+    <div class="container-11">
+      <div class="items item-spancol">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+    <br />
+    <p>grid-column: 1 / span 2;</p>
+    <div class="container-11">
+      <div class="items item-spancols">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+
+    <br />
+    <h5>Row & Column</h5>
+    <p>grid-area: (start[r/c]) / (end[r/c])</p>
+    <br />
+    <p>Set item A to start at 2st row and take up 2 cells of row & 1st column and take up 2 cells of column</p>
+    <p>grid-area: 2 / 1 / 3 / 3;</p>
+    <div class="container-11">
+      <div class="items item-spanrowcol">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items">D</div>
+    </div>
+
+    <br />
+    <h3>Using Area Names</h3>
+    <p>
+      grid-template-areas: <br />
+      "header header" <br />
+      "sidebar main" <br />
+      ". footer";
+    </p>
+    <div class="container-names">
+      <div class="items item-header">A</div>
+      <div class="items">B</div>
+      <div class="items">C</div>
+      <div class="items item-footer">D</div>
+    </div>
+    <p>
+      Note: <br />
+      We use dot (.) to define empty area
+    </p>
+  </body>
+</html>

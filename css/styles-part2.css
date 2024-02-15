@@ -56,8 +56,9 @@ td.no-line {
 }
 
 section {
-  height: 100vh;
+  height: 100%;
   padding-top: 60px;
+  margin-bottom: 40%;
 }
 
 .header-nav {
@@ -138,4 +139,17 @@ section {
 .flexbox img {
   width: 200px;
   margin: 20px 40px;
+}
+
+.flexbox {
+  margin-bottom: 0;
+}
+
+.grid {
+  height: 100vh;
+}
+
+.grid ul li {
+  list-style: disc;
+  margin-left: 20px;
 }
