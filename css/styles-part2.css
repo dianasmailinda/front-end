@@ -153,3 +153,36 @@ section {
   list-style: disc;
   margin-left: 20px;
 }
+
+.hiding-element,
+.media-query {
+  height: 100vh;
+}
+
+.tabel {
+  height: 80%;
+  font-size: 2vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabel td {
+  padding: 15px;
+}
+
+.abu {
+  color: lightgray;
+}
+
+.pink {
+  color: rgb(187, 76, 163);
+}
+
+.orange {
+  color: rgb(198, 129, 1);
+}

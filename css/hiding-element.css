@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template: 100fr / repeat(3, 30%);
+  justify-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  padding: 30px;
+  border-right: 1px solid lightgray;
+}
+
+.content:nth-child(3) {
+  border: 0;
+}
+
+.box {
+  width: 100fr;
+  height: 100px;
+  margin: 10px;
+  background-color: gold;
+}
+
+.hidden {
+  display: none;
+}
+
+.v-hidden {
+  visibility: hidden;
+}
