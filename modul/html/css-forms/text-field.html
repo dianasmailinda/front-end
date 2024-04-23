@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+    <link rel="stylesheet" href="../../../css/text-field.css" />
+  </head>
+  <body>
+    <a href="../css-forms.html">Back</a>
+    <form>
+      <p class="title">Type of Text Field</p>
+      <label for="">Text (Default)</label>
+      <input type="text" />
+      <label for="">Number</label>
+      <input type="number" />
+      <label for="">Password</label>
+      <input type="Password" />
+      <label for="">Date</label>
+      <input type="Date" />
+      <label for="">Email</label>
+      <input type="Email" />
+      <label for="">Textarea</label>
+      <textarea cols="50" rows="3" placeholder="resizeable"></textarea>
+      <textarea class="ta-fixed" cols="50" rows="3" placeholder="fixed"></textarea>
+      <p class="title">Input Field Attribute</p>
+      <label for="">Value: <span>prepopulate an input field</span></label>
+      <input type="text" value="John Doe" />
+      <label for="">Placeholder: <span>describe the expected value</span></label>
+      <input type="text" placeholder="My name is..." />
+      <label for="">Readonly: <span>unable user to edit the field</span></label>
+      <input type="text" readonly value="John Doe" />
+      <label for="">Disabled: <span>unable user to edit and select the field, the value also won't be sent to the server</span></label>
+      <input type="text" disabled value="John Doe" />
+      <label for="">Maxlength: <span>validate the length of the input</span></label>
+      <input type="text" maxlength="6" placeholder="maxlength=6" />
+      <label for="">Autofocus: <span>input field automatically get focused</span></label>
+      <input type="text" autofocus />
+      <br /><br /><br />
+      <p style="margin-bottom: 1rem">Note:</p>
+      <p>To prepopulate a textarea, we can not use the value attribute, instead we type it directly inside the textarea tags.</p>
+      <textarea>Prepopulate this textarea</textarea>
+    </form>
+  </body>
+</html>

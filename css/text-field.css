@@ -1,0 +1,18 @@
+form {
+  width: 50%;
+  padding: 2rem;
+}
+
+.title {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(151, 101, 151);
+}
+
+.ta-fixed {
+  resize: none;
+}
+
+label span {
+  font-weight: 300;
+}

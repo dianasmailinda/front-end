@@ -1,0 +1,90 @@
+.group {
+  margin-bottom: 5rem;
+  padding-left: 2rem;
+}
+
+.styled {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+.styled label {
+  display: block;
+}
+
+.styled input[type="text"],
+.styled input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  transition: border-color 0.15s, box-shadow 0.5s;
+}
+
+.styled input[type="text"]:focus,
+.styled input[type="email"]:focus {
+  border-color: rgb(100, 183, 135);
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(100, 183, 135, 0.25);
+}
+
+.styled button {
+  background: rgb(100, 183, 135);
+  color: white;
+  border: 0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+}
+
+.styled .form-group {
+  margin-bottom: 1rem;
+}
+
+.css-framework {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  width: 50px;
+  text-align: center;
+  background: rgb(235, 179, 39);
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+}
+
+.btn a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.ddl {
+  margin: 3rem 0;
+}
+
+.file div {
+  margin-bottom: 2rem;
+}
+
+.file label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.file p {
+  font-size: small;
+  margin-bottom: 0.25rem;
+}
+
+.grouping form {
+  width: 25%;
+}
+
+.grouping input {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}

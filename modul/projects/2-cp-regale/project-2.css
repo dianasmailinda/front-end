@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #4e4124;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 33px;
+  font-weight: 400;
+  margin: 15px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.start-c2 {
+  grid-column: 2;
+}
+
+body {
+  background-color: white;
+  color: #4e4124;
+  display: grid;
+  grid-template-rows: 140px auto 150px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  row-gap: 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+header nav {
+  display: grid;
+  grid-template-rows: 90px 50px;
+  grid-template-areas:
+    "nav-top"
+    "nav-bottom";
+}
+
+.nav-top {
+  grid-area: nav-top;
+  display: grid;
+  grid-template-columns: 30fr 40fr 30fr;
+  grid-template-rows: 100fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo span {
+  font-family: "Kalnia";
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.nav-top .book-btn {
+  justify-self: end;
+}
+
+.book-btn span {
+  font-family: "Raleway";
+  font-weight: 600;
+  padding: 20px;
+}
+
+.nav-bottom {
+  grid-area: nav-bottom;
+}
+
+.nav-bottom ul {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 10rem);
+  grid-template-rows: 100fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bottom span {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+main {
+  grid-area: main;
+}
+
+.hero {
+  height: calc(100vh - 160px);
+  color: #917a46;
+  font-family: "Playfair Display";
+  font-size: 65px;
+  background-image: url(../../../assets/images/project-2-home.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 250px;
+  padding-top: 95px;
+  display: grid;
+  grid-template-rows: repeat(2, 5.5rem);
+  justify-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 8fr 84fr 8fr;
+}
+
+.home-dining {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 8fr) 2fr;
+  grid-template-rows: calc(100vh - 300px);
+  justify-items: center;
+  align-items: center;
+}
+
+.home-dining-text {
+  font-family: "Lora";
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-dining img {
+  height: 100%;
+}
+
+.home-hall {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-rows: calc(40vh - 150px) 60vh;
+}
+
+.home-hall-top {
+  font-family: "Lora";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-hall-top span {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.home-hall-top h2 {
+  margin-top: 0;
+}
+
+.home-hall-btm {
+  background-image: url(../../../assets/images/project-2-home-hall.jpg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center -50px;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+}
+
+.home-hall-btm a {
+  color: #4e4124;
+  background-color: white;
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 35px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+.home-wed {
+  display: grid;
+  grid-template-columns: repeat(2, 50fr);
+  grid-template-rows: 100px;
+}
+
+footer {
+  grid-area: footer;
+}

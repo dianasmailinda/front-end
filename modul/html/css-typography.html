@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/typography.css" />
+  </head>
+  <body>
+    <a href="css-1.html">Back</a>
+    <h1>Typography</h1>
+    <h2>Fonts</h2>
+    <p style="text-decoration: underline">Font types:</p>
+    <ul>
+      <li>
+        <span style="font-weight: bold">Serif</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cum quis nisi quaerat officia beatae, impedit ut quod. Eum labore vel dicta incidunt laborum quia quis deserunt nemo ducimus alias?</p>
+      </li>
+      <li>
+        <span style="font-weight: bold">Sans-serif</span>
+        <p style="font-family: Arial, Helvetica, sans-serif">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptas tempora eos fuga totam pariatur ipsa ducimus debitis sequi quae labore, mollitia nesciunt suscipit esse distinctio harum est numquam quas.
+        </p>
+      </li>
+      <li>
+        <span style="font-weight: bold">Monospace</span>
+        <p style="font-family: 'Courier New', Courier, monospace">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, eveniet ipsum ad eligendi similique earum sit atque ex! Repellat et vero blanditiis illum ipsum pariatur facilis alias ea accusamus architecto!
+        </p>
+      </li>
+    </ul>
+    <br />
+    <p style="text-decoration: underline">Font formats:</p>
+    <div class="kolom">
+      <ul style="margin: 0">
+        <li>.woff</li>
+        <li>.woff2</li>
+      </ul>
+      <p style="font-size: 50px; margin: 0">></p>
+      <p style="margin: 0">Most Compressed</p>
+    </div>
+    <br />
+    <p style="text-decoration: underline">Embedding Web Fonts:</p>
+    <div class="code">
+      <span>@font-face {</span><br />
+      <div class="isi">
+        <span>font-family:"nama font";</span><br />
+        <span>src: url("letak file font");</span><br />
+        <span>font-weight: ;</span><br />
+        <span>font-style: ;</span><br />
+      </div>
+      <span>}</span>
+    </div>
+    <br />
+    <p style="text-decoration: underline">Flash of Unstyled Text:</p>
+    <p>How the texts appear while the web is downloading the embedded fonts.</p>
+    <p class="code">font-display:</p>
+    <span class="code isi">auto</span>
+    <p style="display: inline">: the browser decides which behavior will applied. its different from one browser to another.</p>
+    <br />
+    <span class="code isi">swap</span>
+    <p style="display: inline">: the browser will use the fallback font then swap it with custom font when available. (-) user may experience a layout shift</p>
+    <br />
+    <span class="code isi">fallback</span>
+    <p style="display: inline">: the browser will use the fallback font while downloading the custom font. if the custom font is not downloaded within that short period, the fallback font is gonna be used.</p>
+    <br />
+    <span class="code isi">block</span>
+    <p style="display: inline">: the browser will hide the text until the custom font is downloaded.</p>
+    <br />
+    <span class="code isi">optional</span>
+    <p style="display: inline">: just like fallback, but it will try to download the font in the background then store it in its cache, so in the next load browser will apply this custom font.</p>
+    <br />
+    <p style="text-decoration: underline">Vertical spacing:</p>
+    <ul>
+      <li><span>Margin</span></li>
+      <p style="font-weight: bold">"Law of Proximity"</p>
+      <p>=> Object that are closer are perceived to be related</p>
+      <span>ex:</span
+      ><br /><br />
+      <div class="before">
+        <span style="font-weight: bold; color: grey">Before</span>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque nesciunt, a officiis, fugiat ratione laboriosam hic, quas fugit expedita voluptatum quo laborum accusamus quod sint. Error porro ipsam nam.</p>
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque nesciunt, a officiis, fugiat ratione laboriosam hic, quas fugit expedita voluptatum quo laborum accusamus quod sint. Error porro ipsam nam.</p>
+      </div>
+      <div class="after">
+        <span style="font-weight: bold; color: rgb(52, 75, 90)">After</span>
+        <h2 class="prox">Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque nesciunt, a officiis, fugiat ratione laboriosam hic, quas fugit expedita voluptatum quo laborum accusamus quod sint. Error porro ipsam nam.</p>
+        <h2 class="prox">Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque nesciunt, a officiis, fugiat ratione laboriosam hic, quas fugit expedita voluptatum quo laborum accusamus quod sint. Error porro ipsam nam.</p>
+      </div>
+      <li><span>Line Height</span></li>
+      <p class="prox" style="font-weight: bold">Normal</p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dolorem possimus numquam, voluptate dignissimos officia tempore placeat. Deserunt, amet error? Repudiandae aliquam fugiat laudantium hic laboriosam placeat odio debitis deleniti.
+        Laboriosam, reprehenderit eveniet. In deleniti iste officiis earum porro laboriosam mollitia maiores itaque cupiditate! Molestiae nisi officia atque reiciendis pariatur.
+      </p>
+      <p class="prox" style="font-weight: bold">line-height: 1.5</p>
+      <p class="lineheight">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illo suscipit nemo, quas incidunt ullam aperiam necessitatibus quo praesentium, placeat totam perferendis amet blanditiis deserunt hic. Laborum eveniet sequi aperiam quisquam
+        repellat. Nisi, quia aperiam natus esse, suscipit, sit minima reiciendis aut alias quaerat sed magni iusto mollitia accusamus exercitationem!
+      </p>
+    </ul>
+    <br />
+    <p style="text-decoration: underline">Horizontal spacing:</p>
+    <ul>
+      <li><span>letter-spacing</span></li>
+      <p style="letter-spacing: 1px">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nostrum maiores corrupti voluptates vel rem, laudantium dolorum facilis soluta error sint, accusamus a, omnis possimus consectetur itaque provident dolore fugit facere quis labore
+        atque voluptatum. Voluptatum explicabo commodi eveniet, magnam in incidunt rem ab nostrum mollitia architecto aspernatur quod tempore?
+      </p>
+      <br />
+      <li><span>word-spacing</span></li>
+      <p style="word-spacing: 10px">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nostrum maiores corrupti voluptates vel rem, laudantium dolorum facilis soluta error sint, accusamus a, omnis possimus consectetur itaque provident dolore fugit facere quis labore
+        atque voluptatum. Voluptatum explicabo commodi eveniet, magnam in incidunt rem ab nostrum mollitia architecto aspernatur quod tempore?
+      </p>
+      <br />
+      <li>
+        <span>width</span>
+        <p style="line-height: 1px">Ideal line length: 50-70 characters</p>
+        <p style="width: 50ch">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex nostrum maiores corrupti voluptates vel rem, laudantium dolorum facilis soluta error sint, accusamus a, omnis possimus consectetur itaque provident dolore fugit facere quis labore
+          atque voluptatum. Voluptatum explicabo commodi eveniet, magnam in incidunt rem ab nostrum mollitia architecto aspernatur quod tempore?
+        </p>
+      </li>
+    </ul>
+    <br />
+    <p style="text-decoration: underline">Formatting text:</p>
+    <ul>
+      <li><span class="code">text-align</span></li>
+      <ul>
+        <li>
+          <span>left</span>
+          <p style="text-align: left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum. Debitis iste dolor non iure omnis autem! Recusandae omnis veniam quis laborum eum impedit consequuntur corporis vel hic quos soluta modi at doloremque
+            molestiae assumenda aliquid voluptate similique optio odio labore inventore, quam minus voluptatum. Cupiditate eos alias maiores dolor.
+          </p>
+        </li>
+        <li>
+          <span>right</span>
+          <p style="text-align: right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum. Debitis iste dolor non iure omnis autem! Recusandae omnis veniam quis laborum eum impedit consequuntur corporis vel hic quos soluta modi at doloremque
+            molestiae assumenda aliquid voluptate similique optio odio labore inventore, quam minus voluptatum. Cupiditate eos alias maiores dolor.
+          </p>
+        </li>
+        <li>
+          <span>center</span>
+          <p style="text-align: center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum. Debitis iste dolor non iure omnis autem! Recusandae omnis veniam quis laborum eum impedit consequuntur corporis vel hic quos soluta modi at doloremque
+            molestiae assumenda aliquid voluptate similique optio odio labore inventore, quam minus voluptatum. Cupiditate eos alias maiores dolor.
+          </p>
+        </li>
+        <li>
+          <span>justify</span>
+          <p style="text-align: justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum. Debitis iste dolor non iure omnis autem! Recusandae omnis veniam quis laborum eum impedit consequuntur corporis vel hic quos soluta modi at doloremque
+            molestiae assumenda aliquid voluptate similique optio odio labore inventore, quam minus voluptatum. Cupiditate eos alias maiores dolor.
+          </p>
+        </li>
+      </ul>
+      <li class="indent">
+        <span class="code">text-indent</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo nulla
+          quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo nulla
+          quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+        </p>
+      </li>
+      <li>
+        <span class="code">text-decoration</span>
+        <p style="text-decoration: underline">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo nulla
+          quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+        </p>
+        <p style="text-decoration: line-through">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo nulla
+          quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+        </p>
+      </li>
+      <li>
+        <span class="code">text-transform</span>
+        <ul>
+          <li>
+            Lowercase
+            <p style="text-transform: lowercase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+          <li>
+            Uppercase
+            <p style="text-transform: uppercase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+          <li>
+            Capitalize
+            <p style="text-transform: capitalize">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="code">white-space</span>
+        <ul>
+          <li>
+            wrap
+            <p style="white-space: wrap">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+          <li>
+            no-wrap
+            <p class="whitespc" style="white-space: nowrap">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="code">column-count</span>
+        <p style="column-count: 2; column-gap: 5rem; column-rule: 3px dotted lightgray">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo nulla
+          quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+        </p>
+      </li>
+      <li>
+        <span class="code">direction</span>
+        <ul>
+          <li>
+            ltr
+            <p style="direction: ltr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+          </li>
+          <li>
+            <span>rtl</span>
+            <p style="unicode-bidi: bidi-override !important; direction: unset !important; text-align: right">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio accusantium, cumque modi est rem, repellendus nisi sit possimus, esse officia magnam harum cupiditate cum voluptas sapiente sed nemo reprehenderit explicabo
+              nulla quidem suscipit. Cumque mollitia eius, tenetur placeat eaque reiciendis vel nostrum sunt excepturi! Ratione laudantium ab voluptatum id.
+            </p>
+            <p>note: above is an alternative way since the rtl is not working somehow</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

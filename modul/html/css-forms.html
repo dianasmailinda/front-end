@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/forms.css" />
+  </head>
+  <body>
+    <a href="css-1.html">Back</a>
+    <h1>Forms</h1>
+    <div class="group basic">
+      <h2>Basic Form</h2>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </div>
+    <div class="group styled">
+      <h2>Styling Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </form>
+    </div>
+    <div class="group css-framework">
+      <h2>CSS Frameworks</h2>
+      <ul>
+        <li>
+          <div class="bootstrap">
+            <h3>Bootstrap</h3>
+            <div class="btn"><a href="css-forms/bootstrap.html">Ex</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="milligram">
+            <h3>Milligram</h3>
+            <div class="btn"><a href="css-forms/milligram.html">Ex</a></div>
+          </div>
+        </li>
+        <li>
+          <h3>Tailwind CSS</h3>
+          <div class="btn"><a href="css-forms/tailwind.html">Ex</a></div>
+        </li>
+      </ul>
+    </div>
+    <div class="group text-field">
+      <h2>Text Field</h2>
+      <div class="btn"><a href="css-forms/text-field.html">View</a></div>
+    </div>
+    <div class="group data-list">
+      <h2>Data List</h2>
+      <form>
+        <input type="text" list="countries" />
+        <datalist id="countries">
+          <option>Indonesia</option>
+          <option>Australia</option>
+          <option>Netherlands</option>
+          <option>Japan</option>
+          <option>China</option>
+        </datalist>
+      </form>
+    </div>
+    <div class="group drop-down">
+      <h2>Drop-down List</h2>
+      <form>
+        <div class="ddl">
+          <label for="">Simple Drop-down List</label>
+          <select>
+            <option value="">Select a course..</option>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+          </select>
+        </div>
+        <div class="ddl">
+          <label for="">Multiple Selection</label>
+          <select multiple>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+          </select>
+        </div>
+        <div class="ddl">
+          <label for="">Categorized Drop-down List</label>
+          <select>
+            <optgroup label="Front-End Courses">
+              <option value="">HTML</option>
+              <option value="">CSS</option>
+              <option value="">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-End Courses">
+              <option value="">Node.js</option>
+              <option value="">ASP.NET</option>
+              <option value="">Django</option>
+            </optgroup>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="group check-box">
+      <h2>Check Box</h2>
+      <form>
+        <div>
+          <input type="checkbox" id="front-end" />
+          <label for="front-end">Front-end</label>
+        </div>
+        <div>
+          <input type="checkbox" id="back-end" />
+          <label for="back-end">Back-end</label>
+        </div>
+        <div>
+          <input type="checkbox" id="full-stack" disabled />
+          <label for="full-stack">Full-stack</label>
+        </div>
+      </form>
+    </div>
+    <div class="group radio-btn">
+      <h2>Radio Button</h2>
+      <form>
+        <div class="group">
+          <div>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+          </div>
+        </div>
+        <div class="group">
+          <div>
+            <input type="radio" name="membership" id="silver" />
+            <label for="silver">Silver</label>
+          </div>
+          <div>
+            <input type="radio" name="membership" id="gold" />
+            <label for="gold">Gold</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="group slider">
+      <h2>Slider</h2>
+      <form>
+        <input type="range" min="0" max="100" value="90" />
+      </form>
+      <p>Note:</p>
+      <p>To show the current value of the slider, we use JS</p>
+    </div>
+    <div class="group file">
+      <h2>File Input</h2>
+      <form>
+        <div>
+          <label for="simple">Simple file input</label>
+          <input id="simple" type="file" />
+        </div>
+        <div>
+          <label for="simple">Multiple file input</label>
+          <input id="simple" type="file" multiple />
+        </div>
+        <div>
+          <label for="simple">Limited type of file input</label>
+          <p>For specific format</p>
+          <input id="simple" type="file" accept=".jpg, .png, .jpeg, .gif" />
+          <p>For for all formats of specific type</p>
+          <input id="simple" type="file" accept="image/*" />
+        </div>
+      </form>
+    </div>
+    <div class="group grouping">
+      <h2>Grouping Related Fields</h2>
+      <form>
+        <fieldset>
+          <legend>Billing Address</legend>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </fieldset>
+        <fieldset>
+          <legend>Payment</legend>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </fieldset>
+        <p>OR</p>
+        <section>
+          <h2>Billing Address</h2>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </section>
+        <section>
+          <h2>Payment</h2>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </section>
+      </form>
+    </div>
+    <div class="group validation">
+      <h2>Data Validation</h2>
+      <form>
+        <input type="text" required minlength="3" maxlength="10" />
+        <input type="number" required min="0" max="10" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="group submit">
+      <h2>Submitting The Form</h2>
+      <p>POST</p>
+      <form action="#" method="post">
+        <input type="email" />
+        <button type="submit">Submit</button>
+      </form>
+      <p>GET</p>
+      <form action="#" method="get">
+        <input type="email" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

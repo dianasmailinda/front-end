@@ -22,6 +22,10 @@
           <li><a href="css-border.html">Borders</a></li>
           <li><a href="css-shadow.html">Shadows</a></li>
           <li><a href="css-layout.html">Layout</a></li>
+          <li><a href="css-typography.html">Typography</a></li>
+          <li><a href="css-images.html">Images</a></li>
+          <li><a href="css-forms.html">Forms</a></li>
+          <li><a href="css-animation.html">Transformations, Transitions, & Animations</a></li>
         </ul>
       </nav>
     </header>
@@ -71,22 +75,11 @@
           </li>
         </ul>
         <li class="bold">Relational</li>
-        <p>
-          The selector select element based on the relationship with other
-          elements
-        </p>
+        <p>The selector select element based on the relationship with other elements</p>
         <p>These selectors help us write cleaner markup, but..</p>
         <ul>
-          <li>
-            they can be fragile, bc they're dependent on the location of these
-            elements in the DOM. so if the element is moved around, the styles
-            would break.
-          </li>
-          <li>
-            they are not as fast as basic selectors, you can barely see it, but
-            they are indeed lack of performance since they would need to read
-            more lines of code than necessary.
-          </li>
+          <li>they can be fragile, bc they're dependent on the location of these elements in the DOM. so if the element is moved around, the styles would break.</li>
+          <li>they are not as fast as basic selectors, you can barely see it, but they are indeed lack of performance since they would need to read more lines of code than necessary.</li>
         </ul>
         <p>Relational selectors:</p>
         <ul>
@@ -103,10 +96,7 @@
           <li>
             <p>+</p>
             <p>s1 + s2{}</p>
-            <p>
-              selects the first s2 that comes immediately after s1 (s2 is direct
-              sibling of s1)
-            </p>
+            <p>selects the first s2 that comes immediately after s1 (s2 is direct sibling of s1)</p>
           </li>
           <li>
             <p>~</p>
@@ -121,21 +111,12 @@
           <!-- <p> below is the direct child of <div id=products> -->
           <p>Lorem ipsum dolor sit amet.</p>
           <article>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              rem.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.</p>
           </article>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-          tempora.
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tempora.</p>
         <!-- <p> above is the direct sibling of <div id=products> -->
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-          tempora.
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tempora.</p>
         <br />
         <p style="color: black">Note:</p>
         <ul>
@@ -148,42 +129,24 @@
           <li>
             :first-child
             <article>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                nemo quod vel. Aperiam, minus aut.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
-                animi consectetur rerum voluptatum totam? Officia.
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo quod vel. Aperiam, minus aut.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est animi consectetur rerum voluptatum totam? Officia.</p>
             </article>
           </li>
           <li>
             :first-of-type
             <div>
               <h2>Heading</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                non ipsam facilis amet, laudantium nostrum?
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aspernatur ut enim odit qui dolor odio.
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis non ipsam facilis amet, laudantium nostrum?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ut enim odit qui dolor odio.</p>
             </div>
           </li>
           <li>
             :last-child
             <div class="first">
               <h2>Heading</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                non ipsam facilis amet, laudantium nostrum?
-              </p>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aspernatur ut enim odit qui dolor odio.
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis non ipsam facilis amet, laudantium nostrum?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ut enim odit qui dolor odio.</p>
             </div>
           </li>
           <li>
@@ -215,13 +178,8 @@
         <p>Used to style a part of an element</p>
         <h2>Heading</h2>
         <p id="p-element">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
-          reiciendis similique molestias exercitationem facilis dolore?
-          Architecto culpa doloribus sequi ratione, reprehenderit itaque nisi
-          quia eum deleniti perspiciatis fugit fugiat, cum incidunt sapiente
-          odio molestiae possimus voluptatem porro? Necessitatibus eius nihil
-          non quod libero obcaecati culpa repellat? Dolores fugiat quidem
-          distinctio?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt reiciendis similique molestias exercitationem facilis dolore? Architecto culpa doloribus sequi ratione, reprehenderit itaque nisi quia eum deleniti perspiciatis fugit
+          fugiat, cum incidunt sapiente odio molestiae possimus voluptatem porro? Necessitatibus eius nihil non quod libero obcaecati culpa repellat? Dolores fugiat quidem distinctio?
         </p>
       </ul>
       <h2>Selector Specifity</h2>

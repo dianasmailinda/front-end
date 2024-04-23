@@ -1,0 +1,86 @@
+.contimg {
+  width: 100vw;
+}
+
+.bgimg {
+  width: 100vw;
+  height: 300vh;
+  background: url(../assets/images/dog.jpg);
+  background-size: cover;
+  background-position: 0 -150px;
+  background-attachment: fixed;
+}
+
+.css-sprite img,
+.data-url img {
+  width: 50px;
+}
+
+.bg-facebook,
+.bg-instagram,
+.bg-tiktok,
+.bg-twitter,
+.bg-youtube {
+  display: inline-block;
+  background: url("../assets/images/css-sprite-combined.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.bg-facebook {
+  background-position: -0px -0px;
+  width: 50px;
+  height: 50px;
+  background-size: 100px 150px;
+}
+.bg-instagram {
+  background-position: -50px -0px;
+  width: 50px;
+  height: 50px;
+  background-size: 100px 150px;
+}
+.bg-tiktok {
+  background-position: -0px -50px;
+  width: 50px;
+  height: 50px;
+  background-size: 100px 150px;
+}
+.bg-twitter {
+  background-position: -50px -50px;
+  width: 50px;
+  height: 50px;
+  background-size: 100px 150px;
+}
+.bg-youtube {
+  background-position: -0px -100px;
+  width: 50px;
+  height: 50px;
+  background-size: 100px 150px;
+}
+
+.clipping .dog {
+  width: 30%;
+  clip-path: polygon(35.7% 0.3%, 50% 15%, 62.7% 0%, 77.6% 8.8%, 86.3% 34.3%, 74.7% 63.3%, 50.5% 100.3%, 25% 65%, 14.1% 33.8%, 21.9% 8%);
+}
+
+.filter img {
+  width: 200px;
+}
+
+.dogfilter {
+  filter: grayscale(50%) blur(2px);
+}
+
+.dogfilter:hover {
+  filter: grayscale(0) blur(0);
+}
+
+.high-den .dog {
+  width: 400px;
+}
+
+.coffee {
+  color: burlywood;
+  font-size: 5rem;
+}
