@@ -170,7 +170,3 @@ p {
 .anim:hover {
   animation: pop 4s ease-in 0s infinite alternate;
 }
-
-.animstl:hover {
-  animation: rubberBand;
-}

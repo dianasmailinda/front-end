@@ -1,0 +1,45 @@
+/* variable */
+:root {
+  --color-primary: #282828;
+  --color-green: #c9d663;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+.one {
+  display: inline-block;
+  font-family: var(--font-poppins);
+  color: var(--color-primary);
+  background-color: var(--color-green)
+}
+
+.two {
+  font-family: var(--font-poppins);
+  color: var(--color-primary);
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid var(--color-primary);
+  background: var(--color-green);
+}
+
+/* Object Oriented */
+
+.btn {
+  font-weight: 600;
+  color: #FCF9F3;
+  border: 0;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-primary {
+  background: #C9D663;
+}
+
+.btn-secondary {
+  background: #282828;
+}

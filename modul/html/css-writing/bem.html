@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Element Modifier</title>
+</head>
+<body>
+  <a href="../css-1.html">Back</a>
+  <h2>Block Element Modifier (BEM)</h2>
+  <p>=> A popular naming convention</p>
+  <p>The concept is to think of webpages as bunch of blocks/components/moduls, these blocks can contain elements, and can be modified.</p>
+  <br>
+  <p>Naming conventions:</p>
+  <ul>
+    <li><p>To seperate <b>block</b> and <b>element</b>: block__element</p></li>
+    <li><p>To seperate <b>block</b> and <b>modifier</b>: block--modifier</p></li>
+  </ul>
+  <br>  
+  <p>e.g:</p>
+  <p>We have 3 cards to define products, each card contains header and body. One card has differrent style compared to the others (Popular product).</p>
+  <p>Inside header we have a layout to display price.</p>
+  <p>Inside body we have lists of each product specifications and a button.</p>
+  <br>
+  <p>For case like this, here is how we gonna name our classes (check code)</p>
+  <br>
+  <p style="text-decoration: underline;">Normal card:</p>
+  <p>card > (card__header > card__price) + (card__body > card__list + btn)</p>
+  <br>
+  <p style="text-decoration: underline;">Popular card:</p>
+  <p>card card--popular > (card__header > card__price) + (card__body > card__list + btn)</p>
+  <div class="card">
+    <header class="card__header">
+      <span class="card__price"></span>
+    </header>
+    <div class="card__body">
+      <div class="card__list"></div>
+      <button class="btn"></button>
+    </div>
+  </div>
+
+  <!-- For modified card -->
+  <div class="card card--popular">
+    <header class="card__header">
+      <span class="card__price"></span>
+    </header>
+    <div class="card__body">
+      <div class="card__list"></div>
+      <button class="btn"></button>
+    </div>
+  </div>
+</body>
+</html>
