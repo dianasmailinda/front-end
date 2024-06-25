@@ -1,9 +1,10 @@
 :root {
+  --color-accent: #C9D663;
+  --color-body: #8F8E8E;
+  --color-font-dark: #FCF9F3;
+  --color-headings: #282828;
   --color-primary: #A19D70;
   --color-secondary: #D1CFB2;
-  --color-accent: #C9D663;
-  --color-headings: #282828;
-  --color-body: #8F8E8E;
 }
 
 /* Typography */
@@ -14,11 +15,11 @@ html {
 }
 
 body {
+  color: var(--color-body);
   display: inline-block;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: var(--color-body);
 }
 
 h1,
@@ -69,18 +70,18 @@ a {
 }
 
 .link-arrow {
+  align-items: center;
   color: var(--color-accent);
-  text-transform: uppercase;
+  display: flex;
   font-size: 2rem;
   font-weight: bold;
-  display: flex;
-  align-items: center;
+  text-transform: uppercase;
 }
 
 .arrow {
-  width: 2.5rem;
   margin-left: -1px;
   transition: margin 0.3s;
+  width: 2.5rem;
 }
 
 .link-arrow:hover .arrow {
@@ -94,5 +95,39 @@ a {
 
   .arrow {
     width: 2rem;
+  }
+}
+
+/* Badges */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  /*nowrap is used when we have limited space. to disable wrapping -> content moves to new line*/
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: var(--color-font-dark);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: var(--color-font-dark);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
