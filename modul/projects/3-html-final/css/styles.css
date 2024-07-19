@@ -1,10 +1,10 @@
 :root {
-  --color-accent: #C9D663;
-  --color-body: #8F8E8E;
-  --color-font-dark: #FCF9F3;
+  --color-accent: #c9d663;
+  --color-body: #8f8e8e;
+  --color-font-dark: #fcf9f3;
   --color-headings: #282828;
-  --color-primary: #A19D70;
-  --color-secondary: #D1CFB2;
+  --color-primary: #a19d70;
+  --color-secondary: #d1cfb2;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -207,7 +207,7 @@ a {
 
 .btn--primary {
   background: var(--color-primary);
-  color: #FFF;
+  color: #fff;
 }
 
 .btn--primary:hover {
@@ -216,7 +216,7 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: #FFF;
+  color: #fff;
 }
 
 .btn--secondary:hover {
@@ -225,7 +225,7 @@ a {
 
 .btn--accent {
   background: var(--color-accent);
-  color: #FFF;
+  color: #fff;
 }
 
 .btn--accent:hover {
@@ -289,4 +289,35 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 7%;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
+.card--secondary .badge--secondary {
+  background: #02cdf1;
 }

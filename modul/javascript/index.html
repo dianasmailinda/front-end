@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <section class="htw">
+      <h2 class="title">How to write</h2>
+      <div class="desc">
+        <p>
+          It can be written inside &lt;head&gt; or &lt;body&gt;, using
+          <span class="highlight">&lt;script&gt;</span>
+        </p>
+        <div class="note text-col">
+          <span><b>Note:</b></span>
+          <div>
+            <div class="text-col">
+              <span>*</span>
+              <div class="note-body">
+                <p>Best practice is to put it at the end of &lt;body&gt;.</p>
+                <p class="text-col">
+                  1.
+                  <span class="under-lined flex-inline">
+                    Better user experience
+                  </span>
+                  browser parses the code file from top to bottom, therefore if
+                  the script is placed inside the &lt;head&gt;, the browser will
+                  get busy executing the script and won't be able to render the
+                  content of the page.
+                </p>
+                <p class="text-col">
+                  2.
+                  <span class="under-lined flex-inline">Code dependency</span>
+                  one piece of code needs to read or use elements from another
+                  piece of code. So placing &lt;script&gt; at the end of
+                  &lt;body&gt; will ensure that all these elements are rendered
+                  by the browser.
+                </p>
+              </div>
+            </div>
+            <div class="text-col">
+              <span>**</span>
+              <div>
+                <p>
+                  There are exceptions when using third party codes, sometimes
+                  the code has to be placed inside &lt;head&gt;.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

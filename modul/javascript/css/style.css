@@ -1,0 +1,91 @@
+:root {
+  --color-body: #282828;
+  --color-headings: #CEBC33;
+  --color-accent: #69bcdf;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  margin: 0 200px;
+  line-height: 1.5;
+}
+
+section {
+  display: grid;
+  grid-template: auto / 20fr 80fr;
+  gap: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h2,
+h3 {
+  color: var(--color-headings);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+/* Layout */
+
+.text-col {
+  display: flex;
+  gap: 7px;
+}
+
+.flex-inline {
+  flex-shrink: 0;
+  width: 180px;
+}
+
+/* Typography */
+
+.note {
+  font-size: 1.5rem;
+  color: #a2a2a2;
+}
+
+.note-body {
+  margin-bottom: 1.5rem;
+}
+
+.note p {
+  margin: 0;
+}
+
+.under-lined {
+  text-decoration: underline;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--color-accent);
+}
