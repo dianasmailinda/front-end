@@ -757,8 +757,8 @@ a {
   }
 }
 
-/* Domain */
-.block__domain {
+/* Block: Domain */
+.block-domain {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   max-width: 670px;
@@ -780,4 +780,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Block: Plan */
+
+.block-plan .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
