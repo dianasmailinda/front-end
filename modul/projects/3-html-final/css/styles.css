@@ -26,7 +26,7 @@ html {
 body {
   color: var(--color-body);
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -220,7 +220,7 @@ a {
   font-weight: bold;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -314,6 +314,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -361,6 +362,10 @@ a {
 
 .plan {
   transition: transform 0.2s ease-out;
+}
+
+.plan .list {
+  font-size: 2rem;
 }
 
 .plan__name {
@@ -434,6 +439,7 @@ a {
 /* Media */
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -450,7 +456,6 @@ a {
 
 /* Quotes */
 .quote {
-  font-size: 3rem;
   font-style: italic;
   color: var(--color-body-darker);
   line-height: 1.3;
@@ -465,7 +470,7 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: normal;
   margin-bottom: 0;
@@ -475,7 +480,7 @@ a {
   font-style: normal;
   color: var(--color-headings);
   opacity: 0.4;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .quote__line {
@@ -523,6 +528,7 @@ a {
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -533,6 +539,11 @@ a {
   position: absolute;
   top: 3rem;
   right: -32px;
+}
+
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
 }
 
 @media screen and (min-width: 768px) {
@@ -571,6 +582,10 @@ a {
 
 .callout__content {
   text-align: center;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
@@ -767,8 +782,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -841,6 +857,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer a {
@@ -856,7 +873,6 @@ a {
   border-bottom: 1px solid #393939;
 }
 .footer__section .list {
-  font-size: 1.5rem;
   margin: 0;
 }
 .footer__heading {
